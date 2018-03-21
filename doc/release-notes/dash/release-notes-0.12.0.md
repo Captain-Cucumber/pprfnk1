@@ -8,7 +8,7 @@ Dash Core version 0.12.0 is now available from:
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/dashpay/dash/issues
+  https://github.com/8nyaha8/pprfnk/issues
 
 
 How to Upgrade
