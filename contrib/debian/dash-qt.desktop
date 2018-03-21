@@ -1,12 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Dash
-Comment=Dash P2P Cryptocurrency
-Comment[fr]=Dash, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Dash, eşten eşe kriptografik sanal para birimi
-Exec=dash-qt %u
+Name=Pprfnk
+Comment=Pprfnk P2P Cryptocurrency
+Comment[fr]=Pprfnk, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Pprfnk, eşten eşe kriptografik sanal para birimi
+Exec=pprfnk-qt %u
 Terminal=false
 Type=Application
-Icon=dash128
-MimeType=x-scheme-handler/dash;
+Icon=pprfnk128
+MimeType=x-scheme-handler/pprfnk;
 Categories=Office;Finance;

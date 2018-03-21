@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between dash-cli and dashd)
- * of a given instance of the Dash system.
+ * CBaseChainParams defines the base parameters (shared between pprfnk-cli and pprfnkd)
+ * of a given instance of the Pprfnk system.
  */
 class CBaseChainParams
 {

@@ -1,9 +1,9 @@
-Dash Core version 0.12.2.2
+Pprfnk Core version 0.12.2.2
 ==========================
 
 Release is now available from:
 
-  <https://www.dash.org/downloads/#wallets>
+  <https://www.pprfnk.org/downloads/#wallets>
 
 This is a new minor version release, bringing various bugfixes and other
 improvements.
@@ -21,8 +21,8 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Dash-Qt (on Mac) or
-dashd/dash-qt (on Linux). Because of the per-UTXO fix (see below) there is a
+installer (on Windows) or just copy over /Applications/Pprfnk-Qt (on Mac) or
+pprfnkd/pprfnk-qt (on Linux). Because of the per-UTXO fix (see below) there is a
 one-time database upgrade operation, so expect a slightly longer startup time on
 the first run.
 
@@ -51,7 +51,7 @@ can cause nodes to allocate excessive amounts of memory, which leads them to a
 halt. You can read more about the fix in the original Bitcoin Core pull request
 https://github.com/bitcoin/bitcoin/pull/10195
 
-To fix this issue in Dash Core however, we had to backport a lot of other
+To fix this issue in Pprfnk Core however, we had to backport a lot of other
 improvements from Bitcoin Core, see full list of backports in the detailed
 change log below.
 
@@ -78,7 +78,7 @@ a minor issue which was not affecting mixing speed or user privacy in any way.
 Removal of support for local masternodes
 ----------------------------------------
 
-Keeping a wallet with 1000 DASH unlocked for 24/7 is definitely not a good idea
+Keeping a wallet with 1000 PPRFNK unlocked for 24/7 is definitely not a good idea
 anymore. Because of this fact, it's also no longer reasonable to update and test
 this feature, so it's completely removed now. If for some reason you were still
 using it, please follow one of the guides and setup a remote masternode instead.
@@ -92,7 +92,7 @@ Other improvements and bug fixes
 --------------------------------
 
 As a result of previous intensive refactoring and some additional fixes,
-it should be possible to compile Dash Core with `--disable-wallet` option now.
+it should be possible to compile Pprfnk Core with `--disable-wallet` option now.
 
 This release also improves sync process and significantly lowers the time after
 which `getblocktemplate` rpc becomes available on node start.
@@ -104,7 +104,7 @@ done too.
 0.12.2.2 Change log
 ===================
 
-See detailed [change log](https://github.com/8nyaha8/pprfnk/compare/v0.12.2.1...dashpay:v0.12.2.2) below.
+See detailed [change log](https://github.com/8nyaha8/pprfnk/compare/v0.12.2.1...pprfnk:v0.12.2.2) below.
 
 ### Backports:
 - [`996f5103a`](https://github.com/8nyaha8/pprfnk/commit/996f5103a) Backport #7056: Save last db read
@@ -141,7 +141,7 @@ See detailed [change log](https://github.com/8nyaha8/pprfnk/compare/v0.12.2.1...
 - [`c81394b97`](https://github.com/8nyaha8/pprfnk/commit/c81394b97) Backport #10195: Switch chainstate db and cache to per-txout model
 - [`d4562b5e5`](https://github.com/8nyaha8/pprfnk/commit/d4562b5e5) Fix CCoinsViewCache::GetPriority to use new per-utxo
 - [`92bb65894`](https://github.com/8nyaha8/pprfnk/commit/92bb65894) Fix address index to use new per-utxo DB
-- [`9ad56fe18`](https://github.com/8nyaha8/pprfnk/commit/9ad56fe18) Dash related fixes for per-utxo DB
+- [`9ad56fe18`](https://github.com/8nyaha8/pprfnk/commit/9ad56fe18) Pprfnk related fixes for per-utxo DB
 - [`4f807422f`](https://github.com/8nyaha8/pprfnk/commit/4f807422f) Backport #10550: Don't return stale data from CCoinsViewCache::Cursor()
 - [`151c552c7`](https://github.com/8nyaha8/pprfnk/commit/151c552c7) Backport #10537: Few Minor per-utxo assert-semantics re-adds and tweak
 - [`06aa02ff6`](https://github.com/8nyaha8/pprfnk/commit/06aa02ff6) Backport #10559: Change semantics of HaveCoinInCache to match HaveCoin
@@ -171,7 +171,7 @@ See detailed [change log](https://github.com/8nyaha8/pprfnk/compare/v0.12.2.1...
 - [`51b2c7501`](https://github.com/8nyaha8/pprfnk/commit/51b2c7501) Fix WarningBitsConditionChecker (#1765)
 
 ### Network/Sync:
-- [`5d58dd90c`](https://github.com/8nyaha8/pprfnk/commit/5d58dd90c) Make sure to clear setAskFor in Dash submodules (#1730)
+- [`5d58dd90c`](https://github.com/8nyaha8/pprfnk/commit/5d58dd90c) Make sure to clear setAskFor in Pprfnk submodules (#1730)
 - [`328009749`](https://github.com/8nyaha8/pprfnk/commit/328009749) fine-tune sync conditions in getblocktemplate (#1739)
 - [`362becbcc`](https://github.com/8nyaha8/pprfnk/commit/362becbcc) Bump MIN_PEER_PROTO_VERSION to 70208 (#1772)
 - [`930afd7df`](https://github.com/8nyaha8/pprfnk/commit/930afd7df) Fix mnp and mnv invs (#1775)
@@ -223,13 +223,13 @@ Thanks to everyone who directly contributed to this release:
 
 As well as Bitcoin Core Developers and everyone that submitted issues,
 reviewed pull requests or helped translating on
-[Transifex](https://www.transifex.com/projects/p/dash/).
+[Transifex](https://www.transifex.com/projects/p/pprfnk/).
 
 
 Older releases
 ==============
 
-Dash was previously known as Darkcoin.
+Pprfnk was previously known as Darkcoin.
 
 Darkcoin tree 0.8.x was a fork of Litecoin tree 0.8, original name was XCoin
 which was first released on Jan/18/2014.
@@ -240,21 +240,21 @@ the 0.8.x tree and was first released on Mar/13/2014.
 Darkcoin tree 0.10.x used to be the closed source implementation of Darksend
 which was released open source on Sep/25/2014.
 
-Dash Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
-Darkcoin was rebranded to Dash.
+Pprfnk Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
+Darkcoin was rebranded to Pprfnk.
 
-Dash Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
+Pprfnk Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
 
-Dash Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
+Pprfnk Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
 
 These release are considered obsolete. Old release notes can be found here:
 
-- [v0.12.2](release-notes/dash/release-notes-0.12.2.md) released Nov/08/2017
-- [v0.12.1](release-notes/dash/release-notes-0.12.1.md) released ???/??/2016
-- [v0.12.0](release-notes/dash/release-notes-0.12.0.md) released ???/??/2015
-- [v0.11.2](release-notes/dash/release-notes-0.11.2.md) released Mar/25/2015
-- [v0.11.1](release-notes/dash/release-notes-0.11.1.md) released Feb/10/2015
-- [v0.11.0](release-notes/dash/release-notes-0.11.0.md) released Jan/15/2015
-- [v0.10.x](release-notes/dash/release-notes-0.10.0.md) released Sep/25/2014
-- [v0.9.x](release-notes/dash/release-notes-0.9.0.md) released Mar/13/2014
+- [v0.12.2](release-notes/pprfnk/release-notes-0.12.2.md) released Nov/08/2017
+- [v0.12.1](release-notes/pprfnk/release-notes-0.12.1.md) released ???/??/2016
+- [v0.12.0](release-notes/pprfnk/release-notes-0.12.0.md) released ???/??/2015
+- [v0.11.2](release-notes/pprfnk/release-notes-0.11.2.md) released Mar/25/2015
+- [v0.11.1](release-notes/pprfnk/release-notes-0.11.1.md) released Feb/10/2015
+- [v0.11.0](release-notes/pprfnk/release-notes-0.11.0.md) released Jan/15/2015
+- [v0.10.x](release-notes/pprfnk/release-notes-0.10.0.md) released Sep/25/2014
+- [v0.9.x](release-notes/pprfnk/release-notes-0.9.0.md) released Mar/13/2014
 

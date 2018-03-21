@@ -1,15 +1,15 @@
 [Unit]
-Description=Dash's distributed currency daemon
+Description=Pprfnk's distributed currency daemon
 After=network.target
 
 [Service]
-User=dashcore
-Group=dashcore
+User=pprfnkcore
+Group=pprfnkcore
 
 Type=forking
-PIDFile=/var/lib/dashd/dashd.pid
-ExecStart=/usr/bin/dashd -daemon -pid=/var/lib/dashd/dashd.pid \
--conf=/etc/dashcore/dash.conf -datadir=/var/lib/dashd -disablewallet
+PIDFile=/var/lib/pprfnkd/pprfnkd.pid
+ExecStart=/usr/bin/pprfnkd -daemon -pid=/var/lib/pprfnkd/pprfnkd.pid \
+-conf=/etc/pprfnkcore/pprfnk.conf -datadir=/var/lib/pprfnkd -disablewallet
 
 Restart=always
 PrivateTmp=true

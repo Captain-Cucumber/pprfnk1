@@ -1,6 +1,6 @@
-usr/local/bin/dash-qt usr/bin
-share/pixmaps/dash32.xpm usr/share/pixmaps
-share/pixmaps/dash16.xpm usr/share/pixmaps
-share/pixmaps/dash128.png usr/share/pixmaps
-debian/dash-qt.desktop usr/share/applications
-debian/dash-qt.protocol usr/share/kde4/services/
+usr/local/bin/pprfnk-qt usr/bin
+share/pixmaps/pprfnk32.xpm usr/share/pixmaps
+share/pixmaps/pprfnk16.xpm usr/share/pixmaps
+share/pixmaps/pprfnk128.png usr/share/pixmaps
+debian/pprfnk-qt.desktop usr/share/applications
+debian/pprfnk-qt.protocol usr/share/kde4/services/

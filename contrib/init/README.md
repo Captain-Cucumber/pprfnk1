@@ -1,11 +1,11 @@
 Sample configuration files for:
 
-SystemD: dashd.service
-Upstart: dashd.conf
-OpenRC:  dashd.openrc
-         dashd.openrcconf
-CentOS:  dashd.init
-OS X:    org.dash.dashd.plist
+SystemD: pprfnkd.service
+Upstart: pprfnkd.conf
+OpenRC:  pprfnkd.openrc
+         pprfnkd.openrcconf
+CentOS:  pprfnkd.init
+OS X:    org.pprfnk.pprfnkd.plist
 
 have been made available to assist packagers in creating node packages here.
 

@@ -1,9 +1,9 @@
-Dash Core version 0.12.2
+Pprfnk Core version 0.12.2
 ========================
 
 Release is now available from:
 
-  <https://www.dash.org/downloads/#wallets>
+  <https://www.pprfnk.org/downloads/#wallets>
 
 This is a new major version release, bringing new features and other improvements.
 
@@ -19,8 +19,8 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Dash-Qt (on Mac) or
-dashd/dash-qt (on Linux).
+installer (on Windows) or just copy over /Applications/Pprfnk-Qt (on Mac) or
+pprfnkd/pprfnk-qt (on Linux).
 
 Downgrade warning
 -----------------
@@ -39,15 +39,15 @@ Notable changes
 DIP0001
 -------
 
-We outline an initial scaling mechanism for Dash. After deployment and activation, Dash will be able to handle double the transactions it can currently handle. Together with the faster block times, Dash we will be prepared to handle eight times the traffic of Bitcoin.
+We outline an initial scaling mechanism for Pprfnk. After deployment and activation, Pprfnk will be able to handle double the transactions it can currently handle. Together with the faster block times, Pprfnk we will be prepared to handle eight times the traffic of Bitcoin.
 
-https://github.com/dashpay/dips/blob/master/dip-0001.md
+https://github.com/pprfnk/dips/blob/master/dip-0001.md
 
 
 Fee reduction
 -------------
 
-All transaction fees are reduced 10x (from 10K per Kb to 1K per Kb), including fees for InstantSend (from 0.001 DASH per input to 0.0001 per input)
+All transaction fees are reduced 10x (from 10K per Kb to 1K per Kb), including fees for InstantSend (from 0.001 PPRFNK per input to 0.0001 per input)
 
 InstantSend fix
 ---------------
@@ -78,7 +78,7 @@ New: `assumevalid`, `blocksonly`, `reindex-chainstate`
 
 Experimental: `usehd`, `mnemonic`, `mnemonicpassphrase`, `hdseed`
 
-See `Help -> Command-line options` in Qt wallet or `dashd --help` for more info.
+See `Help -> Command-line options` in Qt wallet or `pprfnkd --help` for more info.
 
 PrivateSend improvements
 ------------------------
@@ -102,11 +102,11 @@ This release includes experimental implementation of BIP39/BIP44 compatible HD w
 0.12.2 Change log
 =================
 
-Detailed [change log](https://github.com/8nyaha8/pprfnk/compare/v0.12.1.x...dashpay:v0.12.2.x) below.
+Detailed [change log](https://github.com/8nyaha8/pprfnk/compare/v0.12.1.x...pprfnk:v0.12.2.x) below.
 
 ### Backports:
 - [`ff30aed68`](https://github.com/8nyaha8/pprfnk/commit/ff30aed68) Align with btc 0.12 (#1409)
-- [`9901cf433`](https://github.com/8nyaha8/pprfnk/commit/9901cf433) Fix for dash-qt issue with startup and multiple monitors. (#1461)
+- [`9901cf433`](https://github.com/8nyaha8/pprfnk/commit/9901cf433) Fix for pprfnk-qt issue with startup and multiple monitors. (#1461)
 - [`39750439b`](https://github.com/8nyaha8/pprfnk/commit/39750439b) Force to use C++11 mode for compilation (#1463)
 - [`e30faab6f`](https://github.com/8nyaha8/pprfnk/commit/e30faab6f) Make strWalletFile const (#1459)
 - [`c4fe22900`](https://github.com/8nyaha8/pprfnk/commit/c4fe22900) Access WorkQueue::running only within the cs lock. (#1460)
@@ -128,7 +128,7 @@ Detailed [change log](https://github.com/8nyaha8/pprfnk/compare/v0.12.1.x...dash
 - [`a443d4e2d`](https://github.com/8nyaha8/pprfnk/commit/a443d4e2d) Backport Bitcoin PRs #6589, #7180 and remaining part of #7181: enable per-command byte counters in `CNode` (#1496)
 - [`f9730cb2e`](https://github.com/8nyaha8/pprfnk/commit/f9730cb2e) Increase test coverage for addrman and addrinfo (#1497)
 - [`a12491448`](https://github.com/8nyaha8/pprfnk/commit/a12491448) Eliminate unnecessary call to CheckBlock (#1498)
-- [`b0843c397`](https://github.com/8nyaha8/pprfnk/commit/b0843c397) Backport Bincoin PR#7348: MOVE ONLY: move rpc* to rpc/ + same for Dash-specific rpc (#1502)
+- [`b0843c397`](https://github.com/8nyaha8/pprfnk/commit/b0843c397) Backport Bincoin PR#7348: MOVE ONLY: move rpc* to rpc/ + same for Pprfnk-specific rpc (#1502)
 - [`f65017cfe`](https://github.com/8nyaha8/pprfnk/commit/f65017cfe) Backport Bitcoin PR#7349: Build against system UniValue when available (#1503)
 - [`ac6c3c900`](https://github.com/8nyaha8/pprfnk/commit/ac6c3c900) Backport Bitcoin PR#7350: Banlist updates (#1505)
 - [`d787fe4ab`](https://github.com/8nyaha8/pprfnk/commit/d787fe4ab) Backport Bitcoin PR#7458: [Net] peers.dat, banlist.dat recreated when missing (#1506)
@@ -155,7 +155,7 @@ Detailed [change log](https://github.com/8nyaha8/pprfnk/compare/v0.12.1.x...dash
 - [`bcf5455bf`](https://github.com/8nyaha8/pprfnk/commit/bcf5455bf) Backport Bitcoin PR#8822: net: Consistent checksum handling (#1565)
 - [`df6d458b8`](https://github.com/8nyaha8/pprfnk/commit/df6d458b8) Backport Bitcoin PR#9260: Mrs Peacock in The Library with The Candlestick (killed main.{h,cpp}) (#1566)
 - [`42c784dc7`](https://github.com/8nyaha8/pprfnk/commit/42c784dc7) Backport Bitcoin PR#9289: net: drop boost::thread_group (#1568)
-- [`b9c67258b`](https://github.com/8nyaha8/pprfnk/commit/b9c67258b) Backport Bitcoin PR#9609: net: fix remaining net assertions (#1575) + Dashify
+- [`b9c67258b`](https://github.com/8nyaha8/pprfnk/commit/b9c67258b) Backport Bitcoin PR#9609: net: fix remaining net assertions (#1575) + Pprfnkify
 - [`2472999da`](https://github.com/8nyaha8/pprfnk/commit/2472999da) Backport Bitcoin PR#9441: Net: Massive speedup. Net locks overhaul (#1586)
 - [`ccee103a0`](https://github.com/8nyaha8/pprfnk/commit/ccee103a0) Backport "assumed valid blocks" feature from Bitcoin 0.13 (#1582)
 - [`105122181`](https://github.com/8nyaha8/pprfnk/commit/105122181) Partially backport Bitcoin PR#9626: Clean up a few CConnman cs_vNodes/CNode things (#1591)
@@ -239,7 +239,7 @@ Detailed [change log](https://github.com/8nyaha8/pprfnk/compare/v0.12.1.x...dash
 - [`8da26da71`](https://github.com/8nyaha8/pprfnk/commit/8da26da71) Eliminate g_connman use in spork module. (#1613)
 - [`4956ba7a7`](https://github.com/8nyaha8/pprfnk/commit/4956ba7a7) Eliminate g_connman use in instantx module. (#1626)
 - [`10eddb52d`](https://github.com/8nyaha8/pprfnk/commit/10eddb52d) Move some (spamy) CMasternodeSync log messages to new `mnsync` log category (#1630)
-- [`753b1e486`](https://github.com/8nyaha8/pprfnk/commit/753b1e486) Eliminate remaining uses of g_connman in Dash-specific code. (#1635)
+- [`753b1e486`](https://github.com/8nyaha8/pprfnk/commit/753b1e486) Eliminate remaining uses of g_connman in Pprfnk-specific code. (#1635)
 - [`8949f4345`](https://github.com/8nyaha8/pprfnk/commit/8949f4345) Wait for full sync in functional tests that use getblocktemplate. (#1642)
 - [`5f0da8aa7`](https://github.com/8nyaha8/pprfnk/commit/5f0da8aa7) fix sync (#1643)
 - [`7a8910443`](https://github.com/8nyaha8/pprfnk/commit/7a8910443) Fix unlocked access to vNodes.size() (#1654)
@@ -253,7 +253,7 @@ Detailed [change log](https://github.com/8nyaha8/pprfnk/compare/v0.12.1.x...dash
 - [`5758ae1bf`](https://github.com/8nyaha8/pprfnk/commit/5758ae1bf) Full path in "failed to load cache" warnings (#1411)
 - [`18c83f58e`](https://github.com/8nyaha8/pprfnk/commit/18c83f58e) Qt: bug fixes and enhancement to traffic graph widget  (#1429)
 - [`72fbfe93d`](https://github.com/8nyaha8/pprfnk/commit/72fbfe93d) Icon Cutoff Fix (#1485)
-- [`4df8a20f9`](https://github.com/8nyaha8/pprfnk/commit/4df8a20f9) Fix windows installer script, should handle `dash:` uri correctly now (#1550)
+- [`4df8a20f9`](https://github.com/8nyaha8/pprfnk/commit/4df8a20f9) Fix windows installer script, should handle `pprfnk:` uri correctly now (#1550)
 - [`8b7dffbb6`](https://github.com/8nyaha8/pprfnk/commit/8b7dffbb6) Update startup shortcuts (#1551)
 - [`6ff7b7aa5`](https://github.com/8nyaha8/pprfnk/commit/6ff7b7aa5) fix TrafficGraphData bandwidth calculation (#1618)
 - [`026ad8421`](https://github.com/8nyaha8/pprfnk/commit/026ad8421) Fix empty tooltip during sync under specific conditions (#1637)
@@ -276,7 +276,7 @@ Detailed [change log](https://github.com/8nyaha8/pprfnk/compare/v0.12.1.x...dash
 - [`b6804678f`](https://github.com/8nyaha8/pprfnk/commit/b6804678f) Minor Warning Fixed (#1482)
 - [`cd76f2a15`](https://github.com/8nyaha8/pprfnk/commit/cd76f2a15) Disable HD wallet by default (#1629)
 - [`8f850c60f`](https://github.com/8nyaha8/pprfnk/commit/8f850c60f) Lower tx fees 10x (#1632)
-- [`7ab175a8e`](https://github.com/8nyaha8/pprfnk/commit/7ab175a8e) Ensure Dash wallets < 0.12.2 can't open HD wallets (#1638)
+- [`7ab175a8e`](https://github.com/8nyaha8/pprfnk/commit/7ab175a8e) Ensure Pprfnk wallets < 0.12.2 can't open HD wallets (#1638)
 - [`7efa5e79d`](https://github.com/8nyaha8/pprfnk/commit/7efa5e79d) fix fallback fee (#1649)
 
 ### RPC:
@@ -315,15 +315,15 @@ Detailed [change log](https://github.com/8nyaha8/pprfnk/compare/v0.12.1.x...dash
 ### Other (technical) commits:
 - [`1a528d945`](https://github.com/8nyaha8/pprfnk/commit/1a528d945) bump to 0.12.2.0 (#1407)
 - [`b815a7b6a`](https://github.com/8nyaha8/pprfnk/commit/b815a7b6a) Merge remote-tracking branch 'remotes/origin/master' into v0.12.2.x
-- [`7a5943c3a`](https://github.com/8nyaha8/pprfnk/commit/7a5943c3a) Merge pull request #1431 from dashpay/v0.12.2.x-merge_upstream
+- [`7a5943c3a`](https://github.com/8nyaha8/pprfnk/commit/7a5943c3a) Merge pull request #1431 from pprfnk/v0.12.2.x-merge_upstream
 - [`8bbcf6200`](https://github.com/8nyaha8/pprfnk/commit/8bbcf6200) Fixed pow (test and algo) (#1415)
 - [`f3b92a95d`](https://github.com/8nyaha8/pprfnk/commit/f3b92a95d) c++11: don't throw from the reverselock destructor (#1421)
-- [`b40f8f333`](https://github.com/8nyaha8/pprfnk/commit/b40f8f333) Rename bitcoinconsensus library to dashconsensus. (#1432)
+- [`b40f8f333`](https://github.com/8nyaha8/pprfnk/commit/b40f8f333) Rename bitcoinconsensus library to pprfnkconsensus. (#1432)
 - [`28a1d0ecc`](https://github.com/8nyaha8/pprfnk/commit/28a1d0ecc) Fix the same header included twice. (#1474)
 - [`adf97e12a`](https://github.com/8nyaha8/pprfnk/commit/adf97e12a) fix travis ci mac build (#1483)
 - [`a28fa724c`](https://github.com/8nyaha8/pprfnk/commit/a28fa724c) fix BIP34 starting blocks for mainnet/testnet (#1476)
 - [`bea548c61`](https://github.com/8nyaha8/pprfnk/commit/bea548c61) adjust/fix some log and error messages (#1484)
-- [`715504357`](https://github.com/8nyaha8/pprfnk/commit/715504357) Dashify bitcoin unix executables (#1486)
+- [`715504357`](https://github.com/8nyaha8/pprfnk/commit/715504357) Pprfnkify bitcoin unix executables (#1486)
 - [`1d67d5212`](https://github.com/8nyaha8/pprfnk/commit/1d67d5212) Don't try to create empty datadir before the real path is known (#1494)
 - [`549b659e8`](https://github.com/8nyaha8/pprfnk/commit/549b659e8) Force self-recheck on CActiveMasternode::ManageStateRemote() (#1441)
 - [`96f0d6ec2`](https://github.com/8nyaha8/pprfnk/commit/96f0d6ec2) various trivial cleanup fixes (#1501)
@@ -374,13 +374,13 @@ Thanks to everyone who directly contributed to this release:
 - UdjinM6
 - Will Wray
 
-As well as Bitcoin Core Developers and everyone that submitted issues or helped translating on [Transifex](https://www.transifex.com/projects/p/dash/).
+As well as Bitcoin Core Developers and everyone that submitted issues or helped translating on [Transifex](https://www.transifex.com/projects/p/pprfnk/).
 
 
 Older releases
 ==============
 
-Dash was previously known as Darkcoin.
+Pprfnk was previously known as Darkcoin.
 
 Darkcoin tree 0.8.x was a fork of Litecoin tree 0.8, original name was XCoin
 which was first released on Jan/18/2014.
@@ -391,20 +391,20 @@ the 0.8.x tree and was first released on Mar/13/2014.
 Darkcoin tree 0.10.x used to be the closed source implementation of Darksend
 which was released open source on Sep/25/2014.
 
-Dash Core tree 0.11.x was a fork of Bitcoin Core tree 0.9, Darkcoin was rebranded
-to Dash.
+Pprfnk Core tree 0.11.x was a fork of Bitcoin Core tree 0.9, Darkcoin was rebranded
+to Pprfnk.
 
-Dash Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
+Pprfnk Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
 
-Dash Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
+Pprfnk Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
 
 These release are considered obsolete. Old changelogs can be found here:
 
-- [v0.12.1](release-notes/dash/release-notes-0.12.1.md) released ???/??/2016
-- [v0.12.0](release-notes/dash/release-notes-0.12.0.md) released ???/??/2015
-- [v0.11.2](release-notes/dash/release-notes-0.11.2.md) released Mar/25/2015
-- [v0.11.1](release-notes/dash/release-notes-0.11.1.md) released Feb/10/2015
-- [v0.11.0](release-notes/dash/release-notes-0.11.0.md) released Jan/15/2015
-- [v0.10.x](release-notes/dash/release-notes-0.10.0.md) released Sep/25/2014
-- [v0.9.x](release-notes/dash/release-notes-0.9.0.md) released Mar/13/2014
+- [v0.12.1](release-notes/pprfnk/release-notes-0.12.1.md) released ???/??/2016
+- [v0.12.0](release-notes/pprfnk/release-notes-0.12.0.md) released ???/??/2015
+- [v0.11.2](release-notes/pprfnk/release-notes-0.11.2.md) released Mar/25/2015
+- [v0.11.1](release-notes/pprfnk/release-notes-0.11.1.md) released Feb/10/2015
+- [v0.11.0](release-notes/pprfnk/release-notes-0.11.0.md) released Jan/15/2015
+- [v0.10.x](release-notes/pprfnk/release-notes-0.10.0.md) released Sep/25/2014
+- [v0.9.x](release-notes/pprfnk/release-notes-0.9.0.md) released Mar/13/2014
 
