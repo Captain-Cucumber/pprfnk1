@@ -1,5 +1,5 @@
 ---
-name: "pprfnk-raspberry-0.12"
+name: "pprfnk-raspberry-1.0"
 enable_cache: true
 suites:
 - "precise"

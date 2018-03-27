@@ -1,5 +1,5 @@
 ---
-name: "pprfnk-linux-0.12"
+name: "pprfnk-linux-1.0"
 enable_cache: true
 suites:
 - "trusty"
