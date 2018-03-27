@@ -132,7 +132,7 @@ public:
         pchMessageStart[2] = 0x13;
         pchMessageStart[3] = 0x61;
         vAlertPubKey = ParseHex("041fda0fb70faad17d7afb468da4f09e7e9c638e2d57de349ce9b1f3dc764ba1feda3d26cbfc7c315a7778375b604122b7e483cf2efb8016a7cc567b202dd02c36");
-        nDefaultPort = 9888;
+        nDefaultPort = 9988;
         nMaxTipAge = 6 * 60 * 60; // ~144 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 100000;
