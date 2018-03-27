@@ -1,4 +1,4 @@
-Pprfnk Core staging tree 0.12.2
+Pprfnk Core staging tree 1.0.0
 ===============================
 
 `master:` [![Build Status](https://travis-ci.org/pprfnk/pprfnk.svg?branch=master)](https://travis-ci.org/pprfnk/pprfnk) `develop:` [![Build Status](https://travis-ci.org/pprfnk/pprfnk.svg?branch=develop)](https://travis-ci.org/pprfnk/pprfnk/branches)
